@@ -7,12 +7,12 @@
 * 
 */
 
-const getCountriesSortedByPopulation = (arr) => {
-     arr.sort((a, b) => {
-           return a.population - b.population;
+const getCountriesSortedByPopulation = (name) => {
+     name.sort((acountry, bcountry) => {
+           return bcountry.population - acountry.population;// rearrange the order to (b - a)
     });
-    return arr.map((a) => {
-        return arr.country;
+    return name.map((bcountry) => {//here too
+        return name.bcountry;
     });
   
 };

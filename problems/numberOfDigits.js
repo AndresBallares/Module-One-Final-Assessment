@@ -8,7 +8,7 @@
 */
 
 const numberOfDigits = (n) => {
-    return n.toString().length;
+    return n.toString().length; // return (n + "").length; would also work.
 };
 
 module.exports = numberOfDigits;

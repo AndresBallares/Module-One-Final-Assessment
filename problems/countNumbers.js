@@ -10,7 +10,7 @@
  */
 
 const countNumbers = (arr) => {
-    let obj = [];
+    const obj = {};// never reasiigned this so const is better off
       arr.forEach((number) => {
           if(obj[number]){
               obj[number] += 1;

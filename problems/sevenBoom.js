@@ -4,8 +4,16 @@
 * @param {number} n - The number to count up to
 * @returns {number[]} - An array matching the pattern described above
 */
-function sevenBoom() {
-
+function sevenBoom(n) {
+    const output = [];
+    for(let i = 1; i <= n; i++){
+        if(i % 7 === 0 || i.toString().includes("7")){
+            output.push("BOOM")
+        } else {
+            output.push(i);
+        }
+    }
+    return output;
 }
 
 module.exports = sevenBoom

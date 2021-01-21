@@ -6,8 +6,9 @@
 * @returns {number} - Returns the second smallest number.
 */
 
-function secondSmallest() {
-  
+function secondSmallest(nums) {
+  nums.sort((a, b) => a - b)
+  return nums[1];
 }
 
 module.exports = secondSmallest

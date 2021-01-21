@@ -8,7 +8,7 @@
 */
 
 const isOdd = (n) => {
-        if(n % 2 === 1){
+        if(n % 2 === 1){  // implicit // return return n%2 === 1; 
             return true;
     }else{
         return false;

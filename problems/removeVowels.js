@@ -7,13 +7,13 @@
 */
 
 const removeVowels = (str) => {
-    if(str === "Aa" || str === "Ee" || str === "Ii" || str === "Oo" || str === "Uu"){
-        return str;
-    }else{
-        return str;
+    let output = "";
+    const vowels = "aeiou";
+    for(const char of str){
+        if(!vowels.includes(char.toLowerCase())){
+            output += char;
+        }
     }
-    
-    }
-
-
+    return output;
+};
 module.exports = removeVowels
